@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Meta Tags -->
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+
+  <title>Under Construction - Jungo_</title>
+
+  <!-- Styles -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onresize="changeLines()">
+  <section id="comingsoon">
+    <div class="container-fluid">
+      <div class="row header">
+        <div class="col-md-6">
+          <img src="images/logo.svg" alt="logo" />
+        </div>
+        <div class="col-md-6 text-right">
+          <a href="mailto:info@jungodigital.com">info@jungodigital.com</a>
+        </div>
+      </div>
+      <div class="row align-items-center main-section">
+        <div class="col-md-1">
+          <div class="first-line"></div>
+          <div class="text">Jungo</div>
+          <div class="second-line"></div>
+        </div>
+        <div class="col-md-10 text-center relative">
+          <img src="images/grafika.svg" alt="grafika" class="grafika">
+          <h1>Coming Soon</h1>
+        </div>
+        <div class="col-md-1">
+          <div class="first-line"></div>
+          <div class="text">2019</div>
+          <div class="second-line"></div>
+        </div>
+      </div>
+      <div class="row footer">
+        <div class="col-md-6">
+          <ul class="social">
+            <li><a href="https://www.facebook.com/jungodigital/" target="_blank"><img src="images/fb.svg" alt="" width="12"
+                  height="24"></a></li>
+            <li><a href="https://www.instagram.com/jungo_digital_solutions/" target="_blank"><img src="images/ig.svg"
+                  alt="" width="24" height="24"></a></li>
+            <li><a href="https://www.linkedin.com/company/jungo-digital-solution/" target="_blank"><img src="images/in.svg"
+                  alt="" width="24" height="24"></a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 text-right">
+          <span>© 2019 Jungo, all rights reserved.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function changeLines() {
+      var h = document.querySelector('.main-section').offsetHeight / 2 - 85;
+      for (let i = 0; i < document.querySelectorAll('.first-line').length; i++) {
+        document.querySelectorAll('.first-line')[i].style.height = "" + h + "px";
+        document.querySelectorAll('.second-line')[i].style.height = "" + h + "px";
+      }
+    }
+  </script>
+</body>
+
+</html>
